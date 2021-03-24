@@ -6,18 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <!-- custom font -->
-    <link
-    href=link rel="preconnect"href="https://fonts.gstatic.com"
-<link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">"
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap" rel="stylesheet">
     <title> Cush's lil Poem </title>
 
     <!-- styles -->
     <style>
       body {
-        font-family: "Happy Monkey", cursive;
+        font-family: "Oswald", cursive
         margin: 2em;
-        background-color: #DF9AA5;
+        background-color: #FFF;
         color: #2E36D0;
         font-size: 1.2em;
       }
@@ -41,8 +39,8 @@
     <script>
       // set up the lists of words
       const subjects = "you,I,we,they".split(","),
-        verbs = "run,walk,speak,drift,talk,whisper".split(","),
-        objects = "me,you,her,him,them".split(",");
+        verbs = "dance,lick,scream,bleed,cut,pour".split(","),
+        objects = "salt,darts,wine,decay,figs,words".split(",");
       // set up the counter
       let counter = 0;
 
@@ -62,7 +60,7 @@
           getRandomFromList(subjects) +
           " " +
           getRandomFromList(verbs) +
-          " to " +
+          " out " + 
           getRandomFromList(objects);
         const lineText = document.createTextNode(text);
         line.appendChild(lineText);
