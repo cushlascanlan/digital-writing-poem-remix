@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <!-- custom font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap" rel="stylesheet">
-    <title> Figs for Brains </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Figs for Brains</title>
 
     <!-- styles -->
     <style>
@@ -40,7 +43,7 @@
       // set up the lists of words
       const subjects = "you,I,we,they".split(","),
         verbs = "dance,lick,scream,bleed,cut,pour,gag".split(","),
-        objects = "darts,wine,decay,figs,rot,words,tears,sage".split(",");
+        objects = "darts,wine,decay,figs,rot,words,tears,salt".split(",");
       // set up the counter
       let counter = 0;
 
@@ -60,7 +63,7 @@
           getRandomFromList(subjects) +
           " " +
           getRandomFromList(verbs) +
-          " out " + 
+          " out " +
           getRandomFromList(objects);
         const lineText = document.createTextNode(text);
         line.appendChild(lineText);
